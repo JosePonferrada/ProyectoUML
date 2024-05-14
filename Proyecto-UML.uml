@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_j1gwYBG8Ee-h7vzHoGNnTw" name="Proyecto-UML">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_j6XbMBG8Ee-h7vzHoGNnTw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_yLpvgBG8Ee-h7vzHoGNnTw" name="RecogidaDeVehiculos" useCase="_YzhNIBG9Ee-h7vzHoGNnTw _5hT5ABG9Ee-h7vzHoGNnTw _YdXhgBG-Ee-h7vzHoGNnTw _lZUakBG-Ee-h7vzHoGNnTw _HoPiABG_Ee-h7vzHoGNnTw _NNhIcBG_Ee-h7vzHoGNnTw _haAacBHAEe-h7vzHoGNnTw _m7UG4BHAEe-h7vzHoGNnTw _0TBu4BHAEe-h7vzHoGNnTw _aasI0BHJEe-gYb-FFHHPkg _6DhXwBHJEe-gYb-FFHHPkg _AtxCMBHKEe-gYb-FFHHPkg">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_YzhNIBG9Ee-h7vzHoGNnTw" name="Login en app" subject="_yLpvgBG8Ee-h7vzHoGNnTw">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_tVN5IBHJEe-gYb-FFHHPkg" name="ExtensionPoint2"/>
+      <include xmi:type="uml:Include" xmi:id="_os98oBG-Ee-h7vzHoGNnTw" addition="_lZUakBG-Ee-h7vzHoGNnTw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_5hT5ABG9Ee-h7vzHoGNnTw" name="Identificar con RRSS" subject="_yLpvgBG8Ee-h7vzHoGNnTw">
+      <generalization xmi:type="uml:Generalization" xmi:id="_kFL5MBG-Ee-h7vzHoGNnTw" general="_YzhNIBG9Ee-h7vzHoGNnTw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_YdXhgBG-Ee-h7vzHoGNnTw" name="Identificar con email + password" subject="_yLpvgBG8Ee-h7vzHoGNnTw">
+      <generalization xmi:type="uml:Generalization" xmi:id="_jCgUMBG-Ee-h7vzHoGNnTw" general="_YzhNIBG9Ee-h7vzHoGNnTw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_lZUakBG-Ee-h7vzHoGNnTw" name="Verificar credenciales" subject="_yLpvgBG8Ee-h7vzHoGNnTw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_HoPiABG_Ee-h7vzHoGNnTw" name="Solicitar recogida" subject="_yLpvgBG8Ee-h7vzHoGNnTw">
+      <include xmi:type="uml:Include" xmi:id="_j9WWYBG_Ee-h7vzHoGNnTw" addition="_NNhIcBG_Ee-h7vzHoGNnTw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_NNhIcBG_Ee-h7vzHoGNnTw" name="Registro parte de avería" subject="_yLpvgBG8Ee-h7vzHoGNnTw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_haAacBHAEe-h7vzHoGNnTw" name="Consultar partes de avería" subject="_yLpvgBG8Ee-h7vzHoGNnTw">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="__sIVIBHAEe-h7vzHoGNnTw" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_m7UG4BHAEe-h7vzHoGNnTw" name="Recoger coche" subject="_yLpvgBG8Ee-h7vzHoGNnTw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_0TBu4BHAEe-h7vzHoGNnTw" name="Consultar destino" subject="_yLpvgBG8Ee-h7vzHoGNnTw">
+      <extend xmi:type="uml:Extend" xmi:id="__sHuEBHAEe-h7vzHoGNnTw" extendedCase="_haAacBHAEe-h7vzHoGNnTw" extensionLocation="__sIVIBHAEe-h7vzHoGNnTw"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_6CbhsBHAEe-h7vzHoGNnTw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_qVq0QBHIEe-gYb-FFHHPkg" name="Al pulsar botón &quot;Ver destino&quot;"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_aasI0BHJEe-gYb-FFHHPkg" name="Gestión de Contraseña" subject="_yLpvgBG8Ee-h7vzHoGNnTw">
+      <extend xmi:type="uml:Extend" xmi:id="_tVMD8BHJEe-gYb-FFHHPkg" extendedCase="_YzhNIBG9Ee-h7vzHoGNnTw" extensionLocation="_tVN5IBHJEe-gYb-FFHHPkg"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_xDCOsBHJEe-gYb-FFHHPkg" name="Al introducir un email correcto"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_6DhXwBHJEe-gYb-FFHHPkg" name="Recordar contraseña" subject="_yLpvgBG8Ee-h7vzHoGNnTw">
+      <generalization xmi:type="uml:Generalization" xmi:id="_DEZiYBHKEe-gYb-FFHHPkg" general="_aasI0BHJEe-gYb-FFHHPkg"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_AtxCMBHKEe-gYb-FFHHPkg" name="Cambiar contraseña" subject="_yLpvgBG8Ee-h7vzHoGNnTw">
+      <generalization xmi:type="uml:Generalization" xmi:id="_D-7Q8BHKEe-gYb-FFHHPkg" general="_aasI0BHJEe-gYb-FFHHPkg"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_76i2sBG8Ee-h7vzHoGNnTw" name="Usuario"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_F_6kMBG9Ee-h7vzHoGNnTw" name="Mecánico">
+    <generalization xmi:type="uml:Generalization" xmi:id="_MTmv0BG9Ee-h7vzHoGNnTw" general="_76i2sBG8Ee-h7vzHoGNnTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Ix0EEBG9Ee-h7vzHoGNnTw" name="Cliente">
+    <generalization xmi:type="uml:Generalization" xmi:id="_LanSUBG9Ee-h7vzHoGNnTw" general="_76i2sBG8Ee-h7vzHoGNnTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_U-ysYBG_Ee-h7vzHoGNnTw" memberEnd="_U-0hkBG_Ee-h7vzHoGNnTw _U-0hkRG_Ee-h7vzHoGNnTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U-zTcBG_Ee-h7vzHoGNnTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U-z6gBG_Ee-h7vzHoGNnTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U-0hkBG_Ee-h7vzHoGNnTw" name="login en app" type="_YzhNIBG9Ee-h7vzHoGNnTw" association="_U-ysYBG_Ee-h7vzHoGNnTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U-0hkRG_Ee-h7vzHoGNnTw" name="mecánico" type="_F_6kMBG9Ee-h7vzHoGNnTw" association="_U-ysYBG_Ee-h7vzHoGNnTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WCCSEBG_Ee-h7vzHoGNnTw" memberEnd="_WCDgMRG_Ee-h7vzHoGNnTw _WCDgMhG_Ee-h7vzHoGNnTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WCC5IBG_Ee-h7vzHoGNnTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WCDgMBG_Ee-h7vzHoGNnTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WCDgMRG_Ee-h7vzHoGNnTw" name="login en app" type="_YzhNIBG9Ee-h7vzHoGNnTw" association="_WCCSEBG_Ee-h7vzHoGNnTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WCDgMhG_Ee-h7vzHoGNnTw" name="cliente" type="_Ix0EEBG9Ee-h7vzHoGNnTw" association="_WCCSEBG_Ee-h7vzHoGNnTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XKhkIBG_Ee-h7vzHoGNnTw" memberEnd="_XKiyQRG_Ee-h7vzHoGNnTw _XKiyQhG_Ee-h7vzHoGNnTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XKiLMBG_Ee-h7vzHoGNnTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XKiyQBG_Ee-h7vzHoGNnTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XKiyQRG_Ee-h7vzHoGNnTw" name="solicitar recogida" type="_HoPiABG_Ee-h7vzHoGNnTw" association="_XKhkIBG_Ee-h7vzHoGNnTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XKiyQhG_Ee-h7vzHoGNnTw" name="cliente" type="_Ix0EEBG9Ee-h7vzHoGNnTw" association="_XKhkIBG_Ee-h7vzHoGNnTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kIJbsBHAEe-h7vzHoGNnTw" memberEnd="_kIKCwhHAEe-h7vzHoGNnTw _kIKp0BHAEe-h7vzHoGNnTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kIKCwBHAEe-h7vzHoGNnTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kIKCwRHAEe-h7vzHoGNnTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kIKCwhHAEe-h7vzHoGNnTw" name="consultar partes de avería" type="_haAacBHAEe-h7vzHoGNnTw" association="_kIJbsBHAEe-h7vzHoGNnTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kIKp0BHAEe-h7vzHoGNnTw" name="mecánico" type="_F_6kMBG9Ee-h7vzHoGNnTw" association="_kIJbsBHAEe-h7vzHoGNnTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_vtRrwBHAEe-h7vzHoGNnTw" name="GoogleMaps"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_26s7wBHAEe-h7vzHoGNnTw" memberEnd="_26vYARHAEe-h7vzHoGNnTw _26vYAhHAEe-h7vzHoGNnTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_26uw8BHAEe-h7vzHoGNnTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_26vYABHAEe-h7vzHoGNnTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_26vYARHAEe-h7vzHoGNnTw" name="geolocalización destino" type="_0TBu4BHAEe-h7vzHoGNnTw" association="_26s7wBHAEe-h7vzHoGNnTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_26vYAhHAEe-h7vzHoGNnTw" name="googlemaps" type="_vtRrwBHAEe-h7vzHoGNnTw" association="_26s7wBHAEe-h7vzHoGNnTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JhxkkBHBEe-h7vzHoGNnTw" memberEnd="_JhyysRHBEe-h7vzHoGNnTw _JhyyshHBEe-h7vzHoGNnTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JhyLoBHBEe-h7vzHoGNnTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JhyysBHBEe-h7vzHoGNnTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JhyysRHBEe-h7vzHoGNnTw" name="recoger coche" type="_m7UG4BHAEe-h7vzHoGNnTw" association="_JhxkkBHBEe-h7vzHoGNnTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JhyyshHBEe-h7vzHoGNnTw" name="consultar partes de avería" type="_haAacBHAEe-h7vzHoGNnTw" association="_JhxkkBHBEe-h7vzHoGNnTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5x0uUBHKEe-gYb-FFHHPkg" name="Usuario">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__wRpwBHKEe-gYb-FFHHPkg" name="Apellido" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YLeNUBHLEe-gYb-FFHHPkg" name="Nombre" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nfwPsBHLEe-gYb-FFHHPkg" name="email" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_x2h2QBHLEe-gYb-FFHHPkg" name="Telefono" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iW6GkBHLEe-gYb-FFHHPkg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iXANMBHLEe-gYb-FFHHPkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
