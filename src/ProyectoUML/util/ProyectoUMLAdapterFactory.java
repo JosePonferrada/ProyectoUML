@@ -72,6 +72,34 @@ public class ProyectoUMLAdapterFactory extends AdapterFactoryImpl {
 				return createRecogidaDeVehiculosAdapter();
 			}
 			@Override
+			public Adapter caseUsuario(Usuario object) {
+				return createUsuarioAdapter();
+			}
+			@Override
+			public Adapter caseMecánico(Mecánico object) {
+				return createMecánicoAdapter();
+			}
+			@Override
+			public Adapter caseFecha(Fecha object) {
+				return createFechaAdapter();
+			}
+			@Override
+			public Adapter caseGrua(Grua object) {
+				return createGruaAdapter();
+			}
+			@Override
+			public Adapter caseinterfazContrasenia(interfazContrasenia object) {
+				return createinterfazContraseniaAdapter();
+			}
+			@Override
+			public Adapter caseCliente(Cliente object) {
+				return createClienteAdapter();
+			}
+			@Override
+			public Adapter caseParte(Parte object) {
+				return createParteAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -102,6 +130,104 @@ public class ProyectoUMLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRecogidaDeVehiculosAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ProyectoUML.Usuario <em>Usuario</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ProyectoUML.Usuario
+	 * @generated
+	 */
+	public Adapter createUsuarioAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ProyectoUML.Mecánico <em>Mecánico</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ProyectoUML.Mecánico
+	 * @generated
+	 */
+	public Adapter createMecánicoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ProyectoUML.Fecha <em>Fecha</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ProyectoUML.Fecha
+	 * @generated
+	 */
+	public Adapter createFechaAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ProyectoUML.Grua <em>Grua</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ProyectoUML.Grua
+	 * @generated
+	 */
+	public Adapter createGruaAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ProyectoUML.interfazContrasenia <em>interfaz Contrasenia</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ProyectoUML.interfazContrasenia
+	 * @generated
+	 */
+	public Adapter createinterfazContraseniaAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ProyectoUML.Cliente <em>Cliente</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ProyectoUML.Cliente
+	 * @generated
+	 */
+	public Adapter createClienteAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ProyectoUML.Parte <em>Parte</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ProyectoUML.Parte
+	 * @generated
+	 */
+	public Adapter createParteAdapter() {
 		return null;
 	}
 

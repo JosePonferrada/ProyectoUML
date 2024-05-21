@@ -5,4 +5,84 @@
     <details key="originalName" value="Proyecto-UML"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="RecogidaDeVehiculos"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Usuario">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="apellido" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="telefono" ordered="false"
+        unique="false" lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mecánico" eSuperTypes="#//Usuario #//interfazContrasenia">
+    <eOperations name="usarGrua" ordered="false" lowerBound="1">
+      <eParameters name="matricula" ordered="false" lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numMecanico" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fechaAlta" ordered="false"
+        lowerBound="1" eType="#//Fecha" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="grua" ordered="false" eType="#//Grua"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fecha">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Dia" ordered="false" lowerBound="1"
+        eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Mes" ordered="false" lowerBound="1"
+        eType="#//Meses"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Anio" ordered="false" lowerBound="1"
+        eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Meses">
+    <eLiterals name="ene"/>
+    <eLiterals name="feb" value="1"/>
+    <eLiterals name="mar" value="2"/>
+    <eLiterals name="abr" value="3"/>
+    <eLiterals name="may" value="4"/>
+    <eLiterals name="jun" value="5"/>
+    <eLiterals name="jul" value="6"/>
+    <eLiterals name="ago" value="7"/>
+    <eLiterals name="sep" value="8"/>
+    <eLiterals name="oct" value="9"/>
+    <eLiterals name="nov" value="10"/>
+    <eLiterals name="dic" value="11"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Grua">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="matricula" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dimensionLargo" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pesoMax" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="interfazContrasenia" abstract="true"
+      interface="true">
+    <eOperations name="recordarPass" ordered="false" lowerBound="1">
+      <eParameters name="email" ordered="false" lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eOperations>
+    <eOperations name="cambiarPass" ordered="false" lowerBound="1">
+      <eParameters name="pass" ordered="false" lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cliente" eSuperTypes="#//Usuario #//interfazContrasenia">
+    <eOperations name="registrarParte" ordered="false" lowerBound="1">
+      <eParameters name="parte" ordered="false" lowerBound="1" eType="#//Parte"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dni" ordered="false" lowerBound="1"
+        eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ciudad" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parte">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numParte" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fechaParte" ordered="false"
+        lowerBound="1" eType="#//Fecha" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="matriculaVehiculo" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="carretera" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="km" ordered="false" lowerBound="1"
+        eType="ecore:EDataType ../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+  </eClassifiers>
 </ecore:EPackage>

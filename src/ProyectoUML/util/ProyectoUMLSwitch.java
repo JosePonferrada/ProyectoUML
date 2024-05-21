@@ -72,6 +72,52 @@ public class ProyectoUMLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ProyectoUMLPackage.USUARIO: {
+				Usuario usuario = (Usuario)theEObject;
+				T result = caseUsuario(usuario);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ProyectoUMLPackage.MECÁNICO: {
+				Mecánico mecánico = (Mecánico)theEObject;
+				T result = caseMecánico(mecánico);
+				if (result == null) result = caseUsuario(mecánico);
+				if (result == null) result = caseinterfazContrasenia(mecánico);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ProyectoUMLPackage.FECHA: {
+				Fecha fecha = (Fecha)theEObject;
+				T result = caseFecha(fecha);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ProyectoUMLPackage.GRUA: {
+				Grua grua = (Grua)theEObject;
+				T result = caseGrua(grua);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ProyectoUMLPackage.INTERFAZ_CONTRASENIA: {
+				interfazContrasenia interfazContrasenia = (interfazContrasenia)theEObject;
+				T result = caseinterfazContrasenia(interfazContrasenia);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ProyectoUMLPackage.CLIENTE: {
+				Cliente cliente = (Cliente)theEObject;
+				T result = caseCliente(cliente);
+				if (result == null) result = caseUsuario(cliente);
+				if (result == null) result = caseinterfazContrasenia(cliente);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ProyectoUMLPackage.PARTE: {
+				Parte parte = (Parte)theEObject;
+				T result = caseParte(parte);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -88,6 +134,111 @@ public class ProyectoUMLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRecogidaDeVehiculos(RecogidaDeVehiculos object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Usuario</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Usuario</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUsuario(Usuario object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mecánico</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mecánico</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMecánico(Mecánico object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Fecha</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Fecha</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFecha(Fecha object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Grua</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Grua</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGrua(Grua object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>interfaz Contrasenia</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>interfaz Contrasenia</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseinterfazContrasenia(interfazContrasenia object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cliente</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cliente</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCliente(Cliente object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Parte</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Parte</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseParte(Parte object) {
 		return null;
 	}
 

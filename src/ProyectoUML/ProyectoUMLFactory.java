@@ -31,6 +31,60 @@ public interface ProyectoUMLFactory extends EFactory {
 	RecogidaDeVehiculos createRecogidaDeVehiculos();
 
 	/**
+	 * Returns a new object of class '<em>Usuario</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Usuario</em>'.
+	 * @generated
+	 */
+	Usuario createUsuario();
+
+	/**
+	 * Returns a new object of class '<em>Mecánico</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mecánico</em>'.
+	 * @generated
+	 */
+	Mecánico createMecánico();
+
+	/**
+	 * Returns a new object of class '<em>Fecha</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Fecha</em>'.
+	 * @generated
+	 */
+	Fecha createFecha();
+
+	/**
+	 * Returns a new object of class '<em>Grua</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Grua</em>'.
+	 * @generated
+	 */
+	Grua createGrua();
+
+	/**
+	 * Returns a new object of class '<em>Cliente</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cliente</em>'.
+	 * @generated
+	 */
+	Cliente createCliente();
+
+	/**
+	 * Returns a new object of class '<em>Parte</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Parte</em>'.
+	 * @generated
+	 */
+	Parte createParte();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

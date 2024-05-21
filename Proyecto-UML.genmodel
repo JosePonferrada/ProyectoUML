@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="/Proyecto-UML/src" modelPluginID="Proyecto-UML"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    modelDirectory="/Proyecto-UML/src" modelPluginID="Proyecto-UML"
     modelName="Proyecto-UML" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="17.0" copyrightFields="false"
-    operationReflection="true" importOrganizing="true">
+    usedGenPackages="../org.eclipse.uml2.types/model/Types.genmodel#//types" operationReflection="true"
+    importOrganizing="true">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
     <details key="DUPLICATE_FEATURES" value="DISCARD"/>
@@ -31,6 +33,69 @@
   <foreignModel>Proyecto-UML.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="ProyectoUML" disposableProviderFactory="true"
       ecorePackage="ProyectoUML.ecore#/">
+    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ProyectoUML.ecore#//Meses">
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/ene"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/feb"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/mar"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/abr"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/may"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/jun"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/jul"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/ago"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/sep"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/oct"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/nov"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ProyectoUML.ecore#//Meses/dic"/>
+    </genEnums>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ProyectoUML.ecore#//RecogidaDeVehiculos"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ProyectoUML.ecore#//Usuario">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Usuario/apellido"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Usuario/nombre"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Usuario/email"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Usuario/telefono"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ProyectoUML.ecore#//Mecánico">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Mecánico/numMecanico"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference ProyectoUML.ecore#//Mecánico/fechaAlta"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ProyectoUML.ecore#//Mecánico/grua"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ProyectoUML.ecore#//Mecánico/usarGrua">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ProyectoUML.ecore#//Mecánico/usarGrua/matricula"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ProyectoUML.ecore#//Fecha">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Fecha/Dia"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Fecha/Mes"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Fecha/Anio"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ProyectoUML.ecore#//Grua">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Grua/matricula"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Grua/dimensionLargo"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Grua/pesoMax"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="ProyectoUML.ecore#//interfazContrasenia">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ProyectoUML.ecore#//interfazContrasenia/recordarPass">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ProyectoUML.ecore#//interfazContrasenia/recordarPass/email"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ProyectoUML.ecore#//interfazContrasenia/cambiarPass">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ProyectoUML.ecore#//interfazContrasenia/cambiarPass/pass"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ProyectoUML.ecore#//Cliente">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Cliente/dni"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Cliente/ciudad"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ProyectoUML.ecore#//Cliente/registrarParte">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ProyectoUML.ecore#//Cliente/registrarParte/parte"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ProyectoUML.ecore#//Parte">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Parte/numParte"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference ProyectoUML.ecore#//Parte/fechaParte"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Parte/matriculaVehiculo"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Parte/carretera"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ProyectoUML.ecore#//Parte/km"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>
